@@ -1,0 +1,142 @@
+<!doctype html>
+<html><head>
+<title>index</title>
+<meta charset="utf-8">
+<!-- para no escalar la pantalla desde el cel-->
+<meta name="keywords" content="selene, ciclos lunares, fases lunares, luna llena, luna, luna nueva, luna menguante,menstruación, ciclo menstrual, ciclo lunar, fase lunar, fases de la luna" />
+<meta name="description" content="Selene es una instalación audiovisual que explora la conexíon del ciclo menstrual con las fases de la luna y las energías que exigen en esta">
+<!-- Google fonts Parrafo -->
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+		<!-- Google fonts título -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+<link  rel="icon"   href="img/4_lunas_slide/favicon.png"="image/png" />
+<link rel="stylesheet" type="text/css" href="css/estilo_index.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+		<div class="cuerpo">
+	<div class="interno">
+
+
+			<div class="logo">
+			<span class="logo_selene"><img src="img/index_img/selene_logo.png"alt=""/></span>
+			</div>
+
+			<div class="subtitulo">
+			<p>“La menstruación te permite expresar tu nexo consciente con tu propio cuerpo y al mismo tiempo el de tu cuerpo con el mundo natural”. Miranda Gray</p>
+
+
+		</div>
+
+		<div class="bg_luna"><img src="img/index_img/luna_bg.png"/></div>
+
+
+	</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="interno">
+	<footer id="footer">
+
+		<!--Flores-->
+		<section class="flor">
+
+				<p>
+					<div id="apdiv1">
+						<table width="100%" border="0">
+							<tr>
+
+
+
+				 <td>  <img alt="Cambiar imagen" height="300px" width="200px" padding: 550px
+					onmouseout="this.src='img/fase_2/Flor 1.png';"
+					onmouseover="this.src='img/fase_2/Flor 1 roja.png';"
+					src="img/fase_2/Flor 1.png"/>  </td>
+
+		 <td>	<img alt="Cambiar imagen" height="300px" width="200px"
+							onmouseout="this.src='img/fase_2/Flor 2.png';"
+							onmouseover="this.src='img/fase_2/Flor 2 roja.png';"
+							src="img/fase_2/Flor 2.png"/>  </td>
+
+
+							 <td>  <img alt="Cambiar imagen" height="300px" width="200px"
+									onmouseout="this.src='img/fase_2/Flor 3.png';"
+									onmouseover="this.src='img/fase_2/Flor 3 roja.png';"
+									src="img/fase_2/Flor 3.png"/> </td>
+
+
+										<td> <img alt="Cambiar imagen" height="300px" width="200px"
+											onmouseout="this.src='img/fase_2/Flor 4.png';"
+											onmouseover="this.src='img/fase_2/Flor 4 roja.png';"
+											src="img/fase_2/Flor 4.png" />  </td>
+
+										</div>
+	</tr>
+	</table>
+
+
+
+	<!-- Sonido -->
+	<div class="song">
+      	<div class="pause" onclick="togglePlay()">
+     <div audio preload="metadata"><img src="img/fase_2/sonido_on.png"/>
+
+
+      	<div class="player">
+      		<audio preload="metadata" src="sonido/Selene cancion de fondo.wav" autoplay type="audio/wav" loop > </audio>
+					<audio preload="metadata" src="sonido/Selene cancion de fondo.mp3" autoplay type="audio/mp3"  loop > </audio>
+					<audio preload="metadata" src="sonido/Selene cancion de fondo.ogg" autoplay type="audio/ogg"  loop > </audio>
+
+      	</div>
+
+      </div>
+
+		</div>
+		</div>
+
+
+
+	</footer>
+
+
+</div>
+</div>
+
+
+
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+	<script src="js/calendario.js"></script>
+
+
+<!-- Scripts Audio-->
+
+<script type="text/javascript">
+
+
+var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+
+	} else {
+		audio.pause();
+			}
+}
+
+</script>
+
+
+
+
+</body>
+</html>

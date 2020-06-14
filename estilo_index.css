@@ -1,0 +1,371 @@
+*{
+  margin:0
+  padding:0;
+  -webkit-box-sizing:border-box;
+  -moz-sizing:border-box;
+  box-sizing: border-box;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+body {
+    line-height:1;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+/***************************************Fin del reset */
+
+
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	/*body {
+		-ms-overflow-style: scrollbar;
+	}*/
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		/*background: #E0E0E2;*/
+		background-image:url(../img/index_img/bg_home.png);
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+
+
+.bg_luna img { 
+	margin-left: 12.5em; 
+
+	
+}
+
+.bg_luna{
+	
+}
+
+.contenedor{/*background: #D4CFCF;*/
+		width: 100%;
+		height:39em;/***************************************alto */
+		max-width: 68em;
+		margin: 0 auto;
+		padding: 0 2.5em;}
+
+@media screen and (max-width: 736px) {
+
+			#contenedor > * > .interno {
+				padding: 0 1.25em;
+			}
+
+		}
+
+
+
+/* Header */
+
+	#header {
+		padding: 1em 0 0 0 ;
+	}
+
+
+.logo_selene {position: absolute;
+				z-index: 100;
+				width: 0.4em;
+				height: 0.4em;	
+				margin-left: 25em;
+				margin-top: 4.5em;
+				}
+
+
+#header .logo {
+			display: block;
+			border-bottom: 0;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+			margin: 0 0 0 0;
+			text-decoration: none;
+			animation: anims_1 3s;
+		}
+
+		#header .logo > * {
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+
+
+
+.subtitulo  {font-size: 1.2em;
+			font-family: 'Libre Baskerville', serif;
+	     	color:#111111;
+			text-align: center;
+			line-height : 2em;
+			position: absolute;
+			z-index: 100;
+			width: 30%;
+	margin: 16em 0 0 15.5em;
+
+
+
+	}
+
+
+
+
+.textos_anims1 { color: #585858;
+		margin: 4em 1em 1em 1em;
+		font-family: 'PT Sans', sans-serif;
+		text-align: center;
+
+}
+
+
+
+
+#footer {
+	/*background: #3538C9;*/
+	position: absolute;
+	margin:-3em 0 0 0;
+	display: block;
+	}
+
+.song img {
+	width: 1.7em;
+	cursor: pointer;
+	margin-left: 61em;	
+}
+
+
+
+
+.slide {height: 1.5em;
+
+
+			}
+
+.slide img {
+	width: 6em;
+
+}
+
+
+
+
+ul.btn {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+		list-style: none;
+
+	 color: #212121;
+	font-size: 1em;
+font-family: 'PT Sans', sans-serif;
+	margin: 0 0 28em 28em;
+
+	}
+
+
+
+
+
+/*Calendario************/
+.title {
+  text-align: center;
+  color: #212121;
+	font-size: 1em;
+font-family: 'PT Sans', sans-serif;}
+.calendar {border:#A0A0A0 0.1em solid;
+  width: 17em;
+  max-width: 40em;
+  margin: 1em auto;
+  padding: .5em 0; }
+  .calendar__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 2em;
+    font-size: 1em;
+	font-family: 'PT Sans', sans-serif;
+    }
+  .calendar__prev, .calendar__next {
+    color: #212121;;
+    cursor: pointer;
+    font-size: 1em; }
+  .calendar__prev {
+    margin-right: auto; }
+  .calendar__next {
+    margin-left: auto; }
+  .calendar__week, .calendar__dates {
+    display: grid;
+	  font-size: 0.8em;
+	 font-family: 'Allerta', sans-serif;
+	  color:#4F4F4F;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1em; }
+  .calendar__month, .calendar__year {
+    padding: .5em 1em; }
+  .calendar__item {
+    text-align: center;
+    line-height: 2; }
+  .calendar__today {
+    background: #9E81A5;
+    color: white;
+    width: 2em;
+    border-radius: 50%;
+    margin: auto; }
+  .calendar__last-days {
+    opacity: .3;
+	  font-family: 'Allerta', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		@media screen and (max-width: 736px) {
+
+			h1 {
+				font-size: 2em;
+				margin: 0 0 1em 0;
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			@media screen and (max-width: 736px) {
+
+			#header {
+				padding: 4em 0 0.1em 0 ;
+			}
